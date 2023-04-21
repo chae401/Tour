@@ -25,7 +25,11 @@ input{
     text-align: right;
     padding-right: 10px;
 }
+<<<<<<< HEAD
 /*로고설정*/
+=======
+/*네이버 로고설정*/
+>>>>>>> 7406a6d038be93d7c0a81c02a47721e12692456b
 .image{
     height: 32px;
     padding: 20px;
@@ -58,7 +62,11 @@ input{
     outline:none;
     width:100%;
 }
+<<<<<<< HEAD
 /*로그인 버튼박스*/
+=======
+/*로그인버튼박스*/
+>>>>>>> 7406a6d038be93d7c0a81c02a47721e12692456b
 .login-btn-wrap{
     height: 52px;
     line-height: 55px;
@@ -68,7 +76,11 @@ input{
     color: #fff;
     cursor: pointer;
 }
+<<<<<<< HEAD
 /*로그인 버튼*/
+=======
+/*로그인버튼*/
+>>>>>>> 7406a6d038be93d7c0a81c02a47721e12692456b
 #login-btn{
     width:100px;
     background-color: #FF4848;
@@ -84,12 +96,20 @@ input{
     border-bottom: 1px solid gainsboro;
     margin: 0px 10px 35px 10px;
 }
+<<<<<<< HEAD
 /*로그인 상태 유지*/
+=======
+/*로그인상태유지*/
+>>>>>>> 7406a6d038be93d7c0a81c02a47721e12692456b
 .stay-check{
     margin-left: 7px;
     float: left;
 }
+<<<<<<< HEAD
 /*로그인 상태 유지 체크박스*/
+=======
+/*로그인상태유지 체크박스*/
+>>>>>>> 7406a6d038be93d7c0a81c02a47721e12692456b
 .stay-check input[type="checkbox"] {
     /*기존 체크박스 숨기기*/
     position: absolute;
