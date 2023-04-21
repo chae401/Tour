@@ -34,7 +34,6 @@ function chageLangSelect(){
 }
 
 function ipCheck(){
-
     var ipcheck = document.getElementById("ip-context");
     
     if(ipcheck.textContent == 'OFF'){
