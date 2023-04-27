@@ -1,7 +1,6 @@
-INDEX VERSION 1.4+C:\dev\ourTour\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3145144991.index
-1465534725.index
-3566052769.index
+INDEX VERSION 1.4+C:\dev\Tour\ourTour\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 1884615586.index
-3487052868.index
-1580206205.index
+2960099714.index
+3645264706.index
+3976960550.index
+3074765615.index
