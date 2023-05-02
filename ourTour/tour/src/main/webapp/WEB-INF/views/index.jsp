@@ -32,8 +32,11 @@
 						<div class="inner">
 								<div class="video-background">
 									<video autoplay muted loop>
+
 										<source src="/tourapp/images/videoplayback.mp4" type="video/mp4">
-									</video>
+
+										<source src="images/videoplayback2.mp4" type="video/mp4">
+								</video>
 								</div>
 							<!-- Header -->
 								<header id="header2">
