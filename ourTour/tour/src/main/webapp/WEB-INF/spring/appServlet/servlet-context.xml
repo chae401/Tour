@@ -18,10 +18,12 @@
 	<resources mapping="/images/**" location="/WEB-INF/static/images/" />
 	<!-- css -->
 	<resources mapping="/common/css/**" location="/WEB-INF/static/common/css/" />
+	
 	<!-- js -->
 	<resources mapping="/common/js/**" location="/WEB-INF/static/common/js/" />
 	<!-- font -->
 	<resources mapping="/common/fontawesome/**" location="/WEB-INF/static/common/fontawesome/" />
+	<resources mapping="/common/fonts/**" location="/WEB-INF/static/common/fonts/" />
 	
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
