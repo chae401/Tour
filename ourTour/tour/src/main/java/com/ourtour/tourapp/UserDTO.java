@@ -1,32 +1,39 @@
-package com.ourtour.board;
+package com.multi.user;
+
 public class UserDTO {
-	private String userID;
-	private String pass;
+	private String id;
+	private String pwd;
 	private String name;
 	private String birth;
-	private String gender;
-	private String email; 
-	private String usertel;     // 전화번호
-	private String userimgaddr;    // 유저이미지 주소
+	private String mail;
+	private String phone;
+	private String nick;
+	private String rdate;
+	private String profile;
+	private String greet;
 	
-	
+	public UserDTO() {
+		
+	}
 	
 	@Override
 	public String toString() {
-		return "UserDTO [userID=" + userID + ", pass=" + pass + ", name=" + name + ", birth=" + birth + ", gender="
-				+ gender + ", email=" + email + ", usertel=" + usertel + ", userimgaddr=" + userimgaddr + "]";
+		return "UserDTO [id=" + id + ", pwd=" + pwd + ", name=" + name + ", birth=" + birth + ", mail=" + mail
+				+ ", phone=" + phone + ", nick=" + nick + ", rdate=" + rdate + ", profile=" + profile + ", greet="
+				+ greet + "]";
 	}
-	public String getUserID() {
-		return userID;
+	
+	public String getId() {
+		return id;
 	}
-	public void setUserID(String userID) {
-		this.userID = userID;
+	public void setId(String id) {
+		this.id = id;
 	}
-	public String getPass() {
-		return pass;
+	public String getPwd() {
+		return pwd;
 	}
-	public void setPass(String pass) {
-		this.pass = pass;
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 	public String getName() {
 		return name;
@@ -40,29 +47,41 @@ public class UserDTO {
 	public void setBirth(String birth) {
 		this.birth = birth;
 	}
-	public String getGender() {
-		return gender;
+	public String getMail() {
+		return mail;
 	}
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
-	public String getEmail() {
-		return email;
+	public String getPhone() {
+		return phone;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
-	public String getUsertel() {
-		return usertel;
+	public String getNick() {
+		return nick;
 	}
-	public void setUsertel(String usertel) {
-		this.usertel = usertel;
+	public void setNick(String nick) {
+		this.nick = nick;
 	}
-	public String getUserimgaddr() {
-		return userimgaddr;
+	public String getRdate() {
+		return rdate;
 	}
-	public void setUserimgaddr(String userimgaddr) {
-		this.userimgaddr = userimgaddr;
+	public void setRdate(String rdate) {
+		this.rdate = rdate;
+	}
+	public String getProfile() {
+		return profile;
+	}
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
+	public String getGreet() {
+		return greet;
+	}
+	public void setGreet(String greet) {
+		this.greet = greet;
 	}
 	
 	
