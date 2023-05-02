@@ -1,7 +1,7 @@
 package com.multi.user;
 
 public class UserDTO {
-	private String userID;
+	private String id;
 	private String pass;
 	private String name;
 	private String birth;
@@ -12,14 +12,14 @@ public class UserDTO {
 	
 	@Override
 	public String toString() {
-		return "UserDTO [userID=" + userID + ", pass=" + pass + ", name=" + name + ", birth=" + birth + ", gender="
+		return "UserDTO [userID=" + id + ", pass=" + pass + ", name=" + name + ", birth=" + birth + ", gender="
 				+ gender + ", email=" + email + ", usertel=" + usertel + ", userimgaddr=" + userimgaddr + "]";
 	}
-	public String getUserID() {
-		return userID;
+	public String getId() {
+		return id;
 	}
-	public void setUserID(String userID) {
-		this.userID = userID;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getPass() {
 		return pass;
