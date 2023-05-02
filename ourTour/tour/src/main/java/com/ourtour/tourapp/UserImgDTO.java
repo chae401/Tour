@@ -1,4 +1,4 @@
-package com.ourtour.board;
+package com.ourtour.tourapp;
 public class UserImgDTO {
 	private int photoNo;
 	private String userID;

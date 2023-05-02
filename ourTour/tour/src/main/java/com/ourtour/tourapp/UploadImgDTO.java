@@ -1,4 +1,4 @@
-package com.ourtour.board;
+package com.ourtour.tourapp;
 public class UploadImgDTO {
 	private int photoNo;
 	private int boardNo;
