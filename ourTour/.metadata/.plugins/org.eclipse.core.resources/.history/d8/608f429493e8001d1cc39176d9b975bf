@@ -1,0 +1,7 @@
+package com.ourtour.tourapp.service;
+
+import java.util.Map;
+
+public interface RecommendService {
+	public Map<String, Map> recommend(String content, String keyword);
+}

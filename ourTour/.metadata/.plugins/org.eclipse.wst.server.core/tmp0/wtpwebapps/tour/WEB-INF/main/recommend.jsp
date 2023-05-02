@@ -1,3 +1,4 @@
+<%@page import="java.util.Map"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
@@ -48,6 +49,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script type="text/javascript">
+		
 			$(document).ready(function(){
 				let today = new Date();
 				let month = today.getMonth()+1;
@@ -67,6 +69,18 @@
 				});
 				
 			});
+			
+			function chk_form(){
+				if(document.getElementById("content").value==''){
+					alert("카테고리를 선택해주세요");
+					return false;
+				}
+				if(document.getElementById("keyword").value==''){
+					alert("키워드를 입력해주세요");
+					return false;
+				}
+				document.getElementById("recommend_keyword").submit();
+			}
 		</script>
 	</head>
 	<body>
@@ -118,35 +132,36 @@
 													<div class="tab-content" id="myTabContent">
 														<div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
 															<div class="booking_form">
-																<form action="#">
+																<form action="/tourapp/recommend.do" id="recommend_keyword">
 																	<div class="form-row">
 																		<div class="form_colum">
-																			<select class="nc_select">
-																				<option selected>Choose place </option>
-																				<option value="1">서울</option>
-																				<option value="2">인천</option>
-																				<option value="3">대전</option>
-																				<option value="3">대구</option>
-																				<option value="3">울산</option>
-																				<option value="3">부산</option>
-																				<option value="3">광주</option>
-																				<option value="3">세종</option>
-																				<option value="3">경기</option>
-																				<option value="3">강원</option>
-																				<option value="3">충청북도</option>
-																				<option value="3">충청남도</option>
-																				<option value="3">전라북도</option>
-																				<option value="3">전라남도</option>
-																				<option value="3">경상북도</option>
-																				<option value="3">경상남도</option>
+																			<select name="content" class="nc_select" id="content">
+																				<option selected>Choose content </option>
+																				<!-- (12:관광지, 14:문화시설, 15:축제공연행사, 25:여행코스, 28:레포츠, 32:숙박, 38:쇼핑, 39:음식점) -->
+																				<option value="12">관광지</option>
+																				<option value="14">문화시설</option>
+																				<option value="15">축제공연행사</option>
+																				<option value="25">여행코스</option>
+																				<option value="28">레포츠</option>
+																				<option value="32">숙박</option>
+																				<option value="38">쇼핑</option>
+																				<option value="39">음식점</option>
+																				<!-- <option value="경기">경기</option>
+																				<option value="강원">강원</option>
+																				<option value="충청북도">충청북도</option>
+																				<option value="충청남도">충청남도</option>
+																				<option value="전라북도">전라북도</option>
+																				<option value="전라남도">전라남도</option>
+																				<option value="경상북도">경상북도</option>
+																				<option value="경상남도">경상남도</option> -->
 																				
 																			</select>
 																		</div>
 																		<div class="form_colum" style="width:65%">
-																			<input id="keyword" placeholder="   Search the keywords" style="width:630px; height:50px">
+																			<input name="keyword" id="keyword" placeholder="   Search the keywords" style="width:630px; height:50px">
 																		</div>
 																		<div class="form_btn">
-																			<a href="#" class="btn_1">search</a>
+																			<a onclick="return chk_form()" class="btn_1">search</a>
 																		</div>
 																	</div>
 																</form>
@@ -178,72 +193,33 @@
 												width :510px
 											}
 										</style>
+										
+										<% Map<String, Map> items = (Map<String, Map>)request.getAttribute("items"); %>
+										
 										<div class="row">
-											<div class="col-lg-4 col-md-4">
-												<div class="single_place">
-													<div class="card" style="width:325px">
-														<img class="card-img-top" src="/tourapp/images/single_place_1.png" alt="Card image" style="width:100%">
-														<div class="card-body">
-														  <h4 class="card-title">Saintmartine Iceland</h4>
-														  <p class="card-text">멋진 해변가. 멋진 비행기</p>
-														  <!-- <a href="#" class="btn btn-primary">view more</a> -->
+											<% if(items!=null){
+												for (Map.Entry<String, Map> entry : items.entrySet()){
+													Map<String, String> item = items.get(entry.getKey());%>
+													<div class="col-lg-4 col-md-4">
+														<div class="single_place">
+															<div class="card" style="width:325px; height:325px">
+																<img class="card-img-top" src="<%=item.get("image") %>" alt="Card image" style="width:100%">
+																<div class="card-body">
+																  <h4 class="card-title"><%=item.get("title") %></h4>
+																  <p class="card-text"><%=item.get("addr") %></p>
+																  <!-- <a href="#" class="btn btn-primary">view more</a> -->
+																</div>
+															  </div>
 														</div>
-													  </div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4">
-												<div class="single_place">
-													<div class="card" style="width:325px">
-														<img class="card-img-top" src="/tourapp/images/single_place_2.png" alt="Card image" style="width:100%">
-														<div class="card-body">
-														  <h4 class="card-title">Saintmartine Iceland</h4>
-														  <p class="card-text">멋진 해변가. 멋진 비행기</p>
-														  <!-- <a href="#" class="btn btn-primary">view more</a> -->
-														</div>
-													  </div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4">
-												<div class="single_place">
-													<div class="card" style="width:325px">
-														<img class="card-img-top" src="/tourapp/images/single_place_3.png" alt="Card image" style="width:100%">
-														<div class="card-body">
-														  <h4 class="card-title">Saintmartine Iceland</h4>
-														  <p class="card-text">멋진 해변가. 멋진 비행기</p>
-														  <!-- <a href="#" class="btn btn-primary">view more</a> -->
-														</div>
-													  </div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4">
-												<div class="single_place">
-													<div class="card" style="width:325px">
-														<img class="card-img-top" src="/tourapp/images/single_place_4.png" alt="Card image" style="width:100%">
-														<div class="card-body">
-														  <h4 class="card-title">Saintmartine Iceland</h4>
-														  <p class="card-text">멋진 해변가. 멋진 비행기</p>
-														  <!-- <a href="#" class="btn btn-primary">view more</a> -->
-														</div>
-													  </div>
-												</div>
-											</div>
-											<div class="col-lg-4 col-md-4">
-												<div class="single_place">
-													<div class="card" style="width:325px">
-														<img class="card-img-top" src="/tourapp/images/single_place_4.png" alt="Card image" style="width:100%">
-														<div class="card-body">
-														  <h4 class="card-title">Saintmartine Iceland</h4>
-														  <p class="card-text">멋진 해변가. 멋진 비행기</p>
-														  <!-- <a href="#" class="btn btn-primary">view more</a> -->
-														</div>
-													  </div>
-												</div>
-											</div>
+													</div>
+												<%} 
+											}%>
+											
 			
 										</div>
-										<div style="text-align : center;">
+										<!-- <div style="text-align : center;">
 											<a href="#" class="btn_1 text-cnter">Discover more</a>
-										</div>
+										</div> -->
 									</div>
 								</section>
 							<!--top place end-->

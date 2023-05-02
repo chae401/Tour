@@ -1,0 +1,19 @@
+package xml;
+
+ import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+public class OpenAPITest02 {
+	public static void main(String[] args) {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

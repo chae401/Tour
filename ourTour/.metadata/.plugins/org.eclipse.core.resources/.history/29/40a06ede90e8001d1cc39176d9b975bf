@@ -1,0 +1,5 @@
+package com.ourtour.tourapp.service;
+
+public interface RecommendService {
+
+}

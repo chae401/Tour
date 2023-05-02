@@ -1,0 +1,29 @@
+package com.ourtour.tourapp.controller;
+
+import java.io.UnsupportedEncodingException;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class RecommendController {
+
+	@RequestMapping("/recommend.do")
+	public ModelAndView recommendPlace(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
+		request.setCharacterEncoding("UTF-8");
+		
+		int content = Integer.parseInt(request.getParameter("content"));
+		String keyword = request.getParameter("keyword");
+		Map<String, Map> items = RecommendService(content, keyword);
+		
+		ModelAndView mav = new ModelAndView();
+		
+		return mav;
+	}
+	
+}
