@@ -1,4 +1,4 @@
-package com.multi.user;
+package com.ourtour.tourapp;
 
 import java.util.List;
 

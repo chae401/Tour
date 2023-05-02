@@ -1,4 +1,4 @@
-package com.multi.user;
+package com.ourtour.tourapp;
 
 public class UserDTO {
 	private String id;
@@ -7,8 +7,8 @@ public class UserDTO {
 	private String birth;
 	private String gender;
 	private String email; 
-	private String usertel;     // 전화번호
-	private String userimgaddr;    // 유저이미지 주소
+	private String usertel;     // �쟾�솕踰덊샇
+	private String userimgaddr;    // �쑀���씠誘몄� 二쇱냼
 	
 	@Override
 	public String toString() {
