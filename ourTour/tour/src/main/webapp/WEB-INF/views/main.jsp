@@ -47,7 +47,7 @@
 								</header>
 								<div class="posts">
 									<article>
-										<a href="#" class="image"><img src="/tourapp/common/images/london.jpg" height="230" alt="" /></a>
+										<a href="#" class="image"><img src="/tourapp/images/london.jpg" height="230" alt="" /></a>
 										<h3>런던 여행 후기!!</h3>
 										<p>김멀티의 런던 여행 후기 1.항공..</p>
 										<ul class="actions">
@@ -61,7 +61,7 @@
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="/tourapp/common/images/paris.jpg" height="230" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/paris.jpg" height="230" alt="" /></a>
 											<h3>나홀로 파리♥</h3>
 											<p>파리는 모든 게 아름다웠다...</p>
 											<ul class="actions">
@@ -69,7 +69,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="/tourapp/common/images/shanghai.jpg" height="230" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/shanghai.jpg" height="230" alt="" /></a>
 											<h3>상하이 기행문</h3>
 											<p>이번 글에서는 상하이 여행에 대하여 간단히 작...</p>
 											<ul class="actions">
@@ -77,7 +77,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="/tourapp/common/images/jeju.jpg" height="230" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/jeju.jpg" height="230" alt="" /></a>
 											<h3>제주 한달 살기(리뷰)</h3>
 											<p>프로젝트가 끝나고 힐링겸 제주 한달살이를 다녀왔는...</p>
 											<ul class="actions">
@@ -85,7 +85,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="/tourapp/test1/images/chicago.jpg" height="230" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/chicago.jpg" height="230" alt="" /></a>
 											<h3>시카고 2주 여행</h3>
 											<p>시카고는 한국인들이 많이 가는 여행지는 아...</p>
 											<ul class="actions">
@@ -108,7 +108,7 @@
 								</section>
 
 							<!-- Menu -->
-								<nav><a href="#"><img src="/tourapp/main/common/images/6681204.png" width="40"></a><br/></nav>
+								<nav><a href="#"><img src="/tourapp/images/6681204.png" width="40"></a><br/></nav>
 								<nav id="menu">
 									<header class="major">
 										<h2>Menu</h2>
@@ -134,7 +134,7 @@
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="/tourapp/common/images/guam.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/guam.jpg" alt="" /></a>
 											<a href="#">피서는 괌으로!</a>
 											<p>text...</p>
 											<ul class="actions">
@@ -142,7 +142,7 @@
 									</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="/tourapp/common/images/fuku.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="/tourapp/images/fuku.jpg" alt="" /></a>
 											<a href="#">요즘 핫한 후쿠오카</a>
 											<p>text...</p>
 											<ul class="actions">
