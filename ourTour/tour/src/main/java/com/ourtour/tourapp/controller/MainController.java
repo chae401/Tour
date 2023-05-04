@@ -11,7 +11,7 @@ public class MainController {
 	}
 	@RequestMapping("/recommend")
 	public String recommend() {
-		return "main/recommend";
+		return "views/recommend";
 	}
 	
 }
